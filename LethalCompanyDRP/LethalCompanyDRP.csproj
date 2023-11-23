@@ -24,14 +24,8 @@
         <Reference Include="Assembly-CSharp">
             <HintPath>E:\SteamLibrary\steamapps\common\Lethal Company\Lethal Company_Data\Managed\Assembly-CSharp.dll</HintPath> <!-- Edit this to the actual location -->
         </Reference>
-        <Reference Include="Facepunch.Steamworks.Win64">
-          <HintPath>E:\SteamLibrary\steamapps\common\Lethal Company\Lethal Company_Data\Managed\Facepunch.Steamworks.Win64.dll</HintPath>
-        </Reference>
         <Reference Include="UnityEngine">
             <HintPath>E:\SteamLibrary\steamapps\common\Lethal Company\Lethal Company_Data\Managed\UnityEngine.dll</HintPath> <!-- Edit this to the actual location -->
         </Reference>
     </ItemGroup>
-    <Target Name="AfterBuild">
-        <Copy SourceFiles="/bin/Debug/netstandard2.1/LethalCompanyDRP.dll" DestinationFolder="E:\SteamLibrary\steamapps\common\Lethal Company\BepInEx\plugins\" ContinueOnError="false" />
-    </Target>
 </Project>

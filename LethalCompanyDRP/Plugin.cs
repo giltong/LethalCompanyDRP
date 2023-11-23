@@ -1,10 +1,6 @@
-﻿using System;
-using System.Threading;
-using BepInEx;
+﻿using BepInEx;
 using BepInEx.Logging;
-using Discord;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace LethalCompanyDRP
 {
@@ -18,13 +14,10 @@ namespace LethalCompanyDRP
         {
             log = Logger;
             log.LogInfo($"Started {PluginInfo.PLUGIN_GUID}");
-        }
-
-        private void OnDestroy()
-        {
             GameObject discordGameObject = new GameObject();
-            DontDestroyOnLoad(discordGameObject);
             discordGameObject.AddComponent<DiscordRP>();
+            DontDestroyOnLoad(discordGameObject);
+            discordGameObject.hideFlags = HideFlags.HideAndDontSave;
         }
     }
 }
