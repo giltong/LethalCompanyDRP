@@ -4,7 +4,7 @@
         <TargetFramework>netstandard2.1</TargetFramework>
         <AssemblyName>LethalCompanyDRP</AssemblyName>
         <Description>Discord Rich Presence for Lethal Company</Description>
-        <Version>1.0.0</Version>
+        <Version>1.2.0</Version>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <LangVersion>latest</LangVersion>
     </PropertyGroup>
